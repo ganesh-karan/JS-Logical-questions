@@ -10,16 +10,17 @@
         //Find Missing Number in a Sequence of numbers from 1 to N
 
         let arr= [1,2,3,5]
-        let totalCount=arr.length+1
-        let sum=(totalCount*(totalCount+1))/2
-        let count=0
-        for(let i=0;i<arr.length;i++){
-            count+=arr[i]
+        let n=1
+        let i=0
+        while(n<arr[arr.length-1]){
+            if(n!==arr[i]){
+                console.log(n)
+            }
+            else{
+                i++
+            }
+            n++
         }
-        let missingNumber= sum-count
-        // console.log(sum)
-        // console.log(missNum)
-        console.log(missingNumber)
     </script>
 </body>
 </html>
