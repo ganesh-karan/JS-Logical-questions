@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Reverse the words in a sentence, not characters. 
+
+// Input: "hello world from js" 
+
+// Output: "js from world hello" 
+
+let input="hello world from js"
+let word=""
+let output=""
+for(let i=input.length-1;i>=0;i--){
+    if(input[i]!=" "){
+    word=input[i]+word  
+}
+else {
+    output += word + " ";
+    word = "";
+}
+}
+output+=word
+console.log(output)
+    </script>
+</body>
+</html>

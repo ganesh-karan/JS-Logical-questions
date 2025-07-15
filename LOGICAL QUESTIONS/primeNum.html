@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //5. Write a program to Check whether the number is prime or not? 
+     let input=9
+      let isPrime=true
+
+      for(let i=2;i<input;i++){
+        if(input%i==0){
+          isPrime=false
+          break
+        }
+      }
+      if(isPrime){
+        console.log("Prime")
+      }
+      else{
+        console.log("Not a prime")
+      }
+    </script>
+</body>
+</html>

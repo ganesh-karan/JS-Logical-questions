@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* Create a pyramid pattern of stars for a given number of rows: 
+
+     * 
+
+    * * 
+
+   * * * 
+
+  * * * * 
+  */
+ let num=5
+ for (let i=0;i<num;i++){
+    let star=""
+    for (let j=0;j<num-i-1;j++){
+        star+=" "
+    }
+    for(let k=0;k<=i;k++){
+        star+="*"+" "
+    }
+    console.log(star)
+ }
+ 
+    </script>
+</body>
+</html>

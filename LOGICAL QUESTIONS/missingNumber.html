@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Find Missing Number in a Sequence of numbers from 1 to N
+
+        let arr= [1,2,3,5]
+        let totalCount=arr.length+1
+        let sum=(totalCount*(totalCount+1))/2
+        let count=0
+        for(let i=0;i<arr.length;i++){
+            count+=arr[i]
+        }
+        let missingNumber= sum-count
+        // console.log(sum)
+        // console.log(missNum)
+        console.log(missingNumber)
+    </script>
+</body>
+</html>
